@@ -1,4 +1,7 @@
 import React from 'react'
+import profileImage from '../images/PF.jpg'
+import Django from '../images/django.png'
+
 
 function App() {
   return (
@@ -23,7 +26,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Hello, I'm <span className="text-blue-600">Your Name</span>
+              Hello, I'm <span className="text-blue-600">My Name</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-4">Full Stack Developer & Creative Problem Solver</p>
             <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
@@ -54,27 +57,31 @@ function App() {
               </p>
               <p className="text-lg text-gray-600">
                 When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or enjoying a good cup of coffee 
+                contributing to open-source projects, or enjoying a good cup of tea 
                 while brainstorming the next big idea.
               </p>
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">2+</h3>
-                  <p className="text-gray-600 mt-2">Years Experience</p>
+                  <h3 className="text-3xl font-bold text-blue-600">4</h3>
+                  <p className="text-gray-600 mt-2">Month Experience</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">10+</h3>
+                  <h3 className="text-3xl font-bold text-blue-600">3+</h3>
                   <p className="text-gray-600 mt-2">Projects Completed</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-blue-600">5+</h3>
+                  <h3 className="text-3xl font-bold text-blue-600">3+</h3>
                   <p className="text-gray-600 mt-2">Technologies Mastered</p>
                 </div>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl flex items-center justify-center">
-                <span className="text-gray-500 text-lg">Your Photo Here</span>
+              <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={profileImage} 
+                  alt="#" 
+                  className="object-cover w-full h-full" 
+                />
               </div>
             </div>
           </div>
@@ -91,20 +98,20 @@ function App() {
               <div className="flex flex-wrap gap-2">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                {/* <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span> */}
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                {/* <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vue.js</span> */}
               </div>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">Backend</h3>
               <div className="flex flex-wrap gap-2">
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>
-                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Express.js</span>
+                {/* <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Express.js</span> */}
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python</span>
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Django</span>
-                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                {/* <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span> */}
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
               </div>
             </div>
@@ -113,10 +120,10 @@ function App() {
               <div className="flex flex-wrap gap-2">
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Git</span>
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Docker</span>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">AWS</span>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Figma</span>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Jest</span>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Webpack</span>
+                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Linux</span>
+                {/* <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Figma</span> */}
+                {/* <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Jest</span> */}
+                {/* <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Webpack</span> */}
               </div>
             </div>
           </div>
@@ -130,24 +137,28 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                <span className="text-gray-500">Project Screenshot</span>
+                 <img 
+                  src={Django} 
+                  alt="#" 
+                  className="object-cover w-full h-full" 
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">E-Commerce Platform</h3>
                 <p className="text-gray-600 mb-4">
-                  A full-stack e-commerce solution built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.
+                  A full-stack e-commerce solution built with Pyhton and Django, featuring user authentication, payment integration, and admin dashboard.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">React</span>
-                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Node.js</span>
-                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">MongoDB</span>
-                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Stripe</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Django</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Postgrest SQL</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">JavaScript</span>
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
+                  <a href="https://bbu-d104-g3.thavrak-lab.xyz/" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm">
                     Live Demo
                   </a>
-                  <a href="#" className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition-colors text-sm">
+                  <a href="https://github.com/piseth04/Django_selling" className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition-colors text-sm">
                     GitHub
                   </a>
                 </div>
@@ -156,7 +167,11 @@ function App() {
 
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                <span className="text-gray-500">Project Screenshot</span>
+                 <img 
+                  src={profileImage} 
+                  alt="#" 
+                  className="object-cover w-full h-full" 
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Task Management App</h3>
@@ -182,7 +197,11 @@ function App() {
 
             <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <span className="text-gray-500">Project Screenshot</span>
+                <img 
+                      src={profileImage} 
+                      alt="#" 
+                      className="object-cover w-full h-full" 
+                    />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Weather Dashboard</h3>
@@ -230,7 +249,7 @@ function App() {
                   <div>
                     <span className="font-medium text-gray-900">Email:</span>
                     <a href="mailto:your.email@example.com" className="text-blue-600 hover:text-blue-700 ml-2">
-                      your.email@example.com
+                      youremail@example.com
                     </a>
                   </div>
                 </div>
@@ -241,7 +260,7 @@ function App() {
                   <div>
                     <span className="font-medium text-gray-900">Phone:</span>
                     <a href="tel:+1234567890" className="text-blue-600 hover:text-blue-700 ml-2">
-                      +1 (234) 567-8900
+                      +855 (0)17-761-255
                     </a>
                   </div>
                 </div>
@@ -251,7 +270,7 @@ function App() {
                   </div>
                   <div>
                     <span className="font-medium text-gray-900">Location:</span>
-                    <span className="text-gray-600 ml-2">Your City, Country</span>
+                    <span className="text-gray-600 ml-2">Siem Reap, Cambodia</span>
                   </div>
                 </div>
               </div>
@@ -259,7 +278,7 @@ function App() {
                 <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                   LinkedIn
                 </a>
-                <a href="#" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors">
+                <a href="https://github.com/piseth04" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors">
                   GitHub
                 </a>
               </div>
