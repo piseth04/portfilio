@@ -67,7 +67,7 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-4">
-              Full Stack Developer & Creative Problem Solver
+              Beginner Full Stack Developer & Creative Problem Solver
             </p>
             
             <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
@@ -135,15 +135,15 @@ function App() {
                 </div>
                 <div className="text-center group">
                   <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 mb-4 group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-2">
-                    <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">3+</h3>
+                    <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">2+</h3>
                     <p className="text-gray-600 mt-2 font-medium">Projects Completed</p>
                   </div>
                 </div>
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-6 mb-4 group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-2">
+                  {/* <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-6 mb-4 group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-2">
                     <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">3+</h3>
                     <p className="text-gray-600 mt-2 font-medium">Technologies Mastered</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -322,17 +322,27 @@ function App() {
                   A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="bg-gradient-to-r from-green-100 to-green-200 text-green-700 px-3 py-1 rounded-xl text-xs font-medium">Vue.js</span>
+                  {/* <span className="bg-gradient-to-r from-green-100 to-green-200 text-green-700 px-3 py-1 rounded-xl text-xs font-medium">Vue.js</span>
                   <span className="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-700 px-3 py-1 rounded-xl text-xs font-medium">Express.js</span>
                   <span className="bg-gradient-to-r from-red-100 to-red-200 text-red-700 px-3 py-1 rounded-xl text-xs font-medium">Socket.io</span>
-                  <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 px-3 py-1 rounded-xl text-xs font-medium">PostgreSQL</span>
+                  <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 px-3 py-1 rounded-xl text-xs font-medium">PostgreSQL</span> */}
                 </div>
                 <div className="flex gap-3">
-                  <button disabled className="flex-1 bg-gray-300 text-gray-500 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed">
-                    In Development
+                  <button disabled className="flex-1 bg-gray-400 text-gray-600 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed opacity-60">
+                    <span className="flex items-center justify-center">
+                      Live Demo
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </span>
                   </button>
-                  <button disabled className="flex-1 border-2 border-gray-300 text-gray-400 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed">
-                    GitHub
+                  <button disabled className="flex-1 border-2 border-gray-300 text-gray-500 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed opacity-60">
+                    <span className="flex items-center justify-center">
+                      GitHub
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -344,7 +354,7 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-4 right-4">
                   <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-purple-600">
-                    React App
+                    Coming Soon
                   </div>
                 </div>
               </div>
@@ -356,17 +366,27 @@ function App() {
                   A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 px-3 py-1 rounded-xl text-xs font-medium">React</span>
+                  {/* <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 px-3 py-1 rounded-xl text-xs font-medium">React</span>
                   <span className="bg-gradient-to-r from-indigo-100 to-indigo-200 text-indigo-700 px-3 py-1 rounded-xl text-xs font-medium">TypeScript</span>
                   <span className="bg-gradient-to-r from-green-100 to-green-200 text-green-700 px-3 py-1 rounded-xl text-xs font-medium">Chart.js</span>
-                  <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 px-3 py-1 rounded-xl text-xs font-medium">API</span>
+                  <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 px-3 py-1 rounded-xl text-xs font-medium">API</span> */}
                 </div>
                 <div className="flex gap-3">
-                  <button disabled className="flex-1 bg-gray-300 text-gray-500 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed">
-                    Coming Soon
+                  <button disabled className="flex-1 bg-gray-400 text-gray-600 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed opacity-60">
+                    <span className="flex items-center justify-center">
+                      Live Demo
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </span>
                   </button>
-                  <button disabled className="flex-1 border-2 border-gray-300 text-gray-400 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed">
-                    GitHub
+                  <button disabled className="flex-1 border-2 border-gray-300 text-gray-500 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed opacity-60">
+                    <span className="flex items-center justify-center">
+                      GitHub
+                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -422,7 +442,7 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="group bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                {/* <div className="group bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -436,7 +456,7 @@ function App() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="group bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-center space-x-4">
