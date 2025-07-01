@@ -20,7 +20,7 @@ function App() {
             <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md shadow-lg z-50 border-b border-slate-700">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-4">
-                        <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                        <h1 className="text-2xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
                             Vuth Piseth
                         </h1>
                         <ul className="hidden md:flex space-x-8">
@@ -110,7 +110,7 @@ function App() {
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                            Hello, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                            Hello, I'm <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
                                 Vuth Piseth
                             </span>
                         </h1>
@@ -124,7 +124,7 @@ function App() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="#contact" className="group bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-medium">
+                            <a href="#contact" className="group bg-gradient-to-r from-white to-purple-300 text-slate-900 px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-medium">
                                 <span className="flex items-center justify-center">
                                     Get In Touch
                                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ function App() {
                                     </svg>
                                 </span>
                             </a>
-                            <a href="#projects" className="group border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-xl hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 font-medium">
+                            <a href="#projects" className="group border-2 border-purple-300 text-purple-300 px-8 py-4 rounded-xl hover:bg-purple-300 hover:text-slate-900 transition-all duration-300 transform hover:-translate-y-1 font-medium">
                                 <span className="flex items-center justify-center">
                                     View My Work
                                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,9 +155,9 @@ function App() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                            About <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Me</span>
+                            About <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Me</span>
                         </h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+                        <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full"></div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -178,13 +178,13 @@ function App() {
                             <div className="grid grid-cols-3 gap-6 pt-8">
                                 <div className="text-center group">
                                     <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
-                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">4</h3>
+                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">4</h3>
                                         <p className="text-slate-400 mt-2 font-medium">Months Experience</p>
                                     </div>
                                 </div>
                                 <div className="text-center group">
                                     <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
-                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">2+</h3>
+                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">2+</h3>
                                         <p className="text-slate-400 mt-2 font-medium">Projects Completed</p>
                                     </div>
                                 </div>
@@ -196,12 +196,12 @@ function App() {
 
                         <div className="flex justify-center lg:justify-end">
                             <div className="relative group">
-                                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-                                <div className="relative w-80 h-80 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
+                                <div className="absolute -inset-4 bg-gradient-to-r from-white to-purple-300 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+                                <div className="relative w-80 h-80 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300">
                                     <img
                                         src={profileImage}
                                         alt="Vuth Piseth"
-                                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                                        className="object-cover w-full h-full"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
@@ -216,9 +216,9 @@ function App() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                            My <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Skills</span>
+                            My <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Skills</span>
                         </h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+                        <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
                         <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                             Here are some of the technologies I work with to bring ideas to life
                         </p>
@@ -293,9 +293,9 @@ function App() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                            My <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Projects</span>
+                            My <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Projects</span>
                         </h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+                        <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
                         <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                             Here are some of the projects I've built with passion and creativity
                         </p>
@@ -330,7 +330,7 @@ function App() {
                                     <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">JavaScript</span>
                                 </div>
                                 <div className="flex gap-3">
-                                    <a href="https://bbu-d104-g3.thavrak-lab.xyz/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 text-sm font-medium text-center group/btn">
+                                    <a href="https://bbu-d104-g3.thavrak-lab.xyz/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gradient-to-r from-white to-purple-300 text-slate-900 px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 text-sm font-medium text-center group/btn">
                                         <span className="flex items-center justify-center">
                                             Live Demo
                                             <svg className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -338,7 +338,7 @@ function App() {
                                             </svg>
                                         </span>
                                     </a>
-                                    <a href="https://github.com/piseth04/Django_selling" target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-slate-600 text-slate-300 px-4 py-2 rounded-xl hover:border-purple-500 hover:text-purple-400 transition-all duration-300 text-sm font-medium text-center group/btn">
+                                    <a href="https://github.com/piseth04/Django_selling" target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-slate-600 text-slate-300 px-4 py-2 rounded-xl hover:border-purple-300 hover:text-purple-300 transition-all duration-300 text-sm font-medium text-center group/btn">
                                         <span className="flex items-center justify-center">
                                             GitHub
                                             <svg className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -443,9 +443,9 @@ function App() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Get In <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Touch</span>
+                Get In <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Touch</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                 Let's create something amazing together. I'm always excited to discuss new opportunities and projects.
             </p>
@@ -455,8 +455,8 @@ function App() {
             <div className="space-y-8">
                 <div className="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
                     <h3 className="text-2xl font-semibold text-white mb-4 flex items-center">
-                        <span className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
-                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span className="w-10 h-10 bg-gradient-to-br from-white to-purple-300 rounded-xl flex items-center justify-center mr-3">
+                            <svg className="w-5 h-5 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
                         </span>
@@ -471,8 +471,8 @@ function App() {
                 <div className="space-y-4">
                     <div className="group bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-1">
                         <div className="flex items-center space-x-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="w-12 h-12 bg-gradient-to-br from-white to-purple-300 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg className="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
@@ -487,8 +487,8 @@ function App() {
 
                     <div className="group bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-1">
                         <div className="flex items-center space-x-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <div className="w-12 h-12 bg-gradient-to-br from-white to-purple-300 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg className="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
@@ -504,7 +504,7 @@ function App() {
                 <div className="bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700">
                     <h4 className="font-semibold text-white mb-4">Connect with me</h4>
                     <div className="flex space-x-4">
-                        <a href="https://t.me/SETHPI" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 font-medium">
+                        <a href="https://t.me/SETHPI" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-r from-white to-purple-300 text-slate-900 px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 font-medium">
                             <span className="flex items-center">
                                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -532,8 +532,8 @@ function App() {
 
             <div className="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
                 <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
-                    <span className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span className="w-10 h-10 bg-gradient-to-br from-white to-purple-300 rounded-xl flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </span>
@@ -592,7 +592,7 @@ function App() {
 
                     <button
                         type="submit"
-                        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 px-6 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-semibold group"
+                        className="w-full bg-gradient-to-r from-white to-purple-300 text-slate-900 py-4 px-6 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-semibold group"
                     >
                         <span className="flex items-center justify-center">
                             Send Message
@@ -613,7 +613,7 @@ function App() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center">
             <div className="mb-6">
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-2">
                     Vuth Piseth
                 </h3>
                 <p className="text-slate-400">Full Stack Developer & Creative Problem Solver</p>
