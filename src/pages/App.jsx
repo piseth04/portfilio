@@ -15,28 +15,78 @@ function App() {
   }
 
   return (
- <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen text-white relative overflow-hidden">
+      {/* Main animated background */}
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 z-0"></div>
+      
+      {/* Enhanced Animated Background System */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        {/* Animated mesh gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-900/10 to-blue-900/60 animate-gradient"></div>
+        
+        {/* Floating orbs */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute top-1/3 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-10 left-1/3 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl animate-float-fast"></div>
+        
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
+        
+        {/* Aurora effect */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-indigo-500/10 animate-gradient"></div>
+        </div>
+        
+        {/* Floating particles */}
+        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-purple-400 rounded-full opacity-20 animate-float"></div>
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-blue-400 rounded-full opacity-30 animate-float-slow"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-white rounded-full opacity-40 animate-float-fast"></div>
+        <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-purple-300 rounded-full opacity-15 animate-float"></div>
+        <div className="absolute bottom-1/3 right-1/5 w-3 h-3 bg-blue-300 rounded-full opacity-25 animate-float-slow"></div>
+        <div className="absolute top-3/4 left-1/5 w-4 h-4 bg-indigo-400 rounded-full opacity-20 animate-float-fast"></div>
+        
+        {/* Constellation stars */}
+        <div className="absolute top-1/5 left-1/5 w-1 h-1 bg-white rounded-full opacity-60 animate-pulse"></div>
+        <div className="absolute top-1/4 right-1/5 w-1 h-1 bg-purple-300 rounded-full opacity-40 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-1/3 left-1/4 w-1 h-1 bg-blue-300 rounded-full opacity-50 animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-2/5 right-1/6 w-1 h-1 bg-indigo-300 rounded-full opacity-30 animate-pulse" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-1/5 right-1/3 w-1 h-1 bg-white rounded-full opacity-40 animate-pulse" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-3/5 left-2/5 w-1 h-1 bg-purple-300 rounded-full opacity-50 animate-pulse" style={{animationDelay: '5s'}}></div>
+        
+        {/* Animated lines */}
+        <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent animate-pulse-slow"></div>
+        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent animate-pulse-slow" style={{animationDelay: '2s'}}></div>
+      </div>
+      
+      {/* All content with proper z-index */}
+      <div className="relative z-10">
+
             {/* Navigation */}
-            <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md shadow-lg z-50 border-b border-slate-700">
+            <nav className="fixed top-0 w-full bg-slate-900/40 backdrop-blur-md shadow-lg z-50 border-b border-slate-700">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-4">
                         <h1 className="text-2xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
                             Vuth Piseth
                         </h1>
                         <ul className="hidden md:flex space-x-8">
-                            <li><a href="#about" className="text-slate-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
+                            <li><a href="#about" className="text-black-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
                                 About
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                             </a></li>
-                            <li><a href="#skills" className="text-slate-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
+                            <li><a href="#skills" className="text-black-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
                                 Skills
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                             </a></li>
-                            <li><a href="#projects" className="text-slate-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
+                            <li><a href="#projects" className="text-black-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
                                 Projects
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                             </a></li>
-                            <li><a href="#contact" className="text-slate-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
+                            <li><a href="#contact" className="text-black-300 hover:text-white transition-all duration-300 hover:scale-105 relative group">
                                 Contact
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                             </a></li>
@@ -54,57 +104,34 @@ function App() {
 
                     {/* Mobile Menu */}
                     {isMenuOpen && (
-                        <div className="md:hidden">
-                            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900 border-t border-slate-700">
-                                <a
-                                    href="#about"
-                                    onClick={closeMenu}
-                                    className="block px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition-all duration-300"
-                                >
-                                    About
-                                </a>
-                                <a
-                                    href="#skills"
-                                    onClick={closeMenu}
-                                    className="block px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition-all duration-300"
-                                >
-                                    Skills
-                                </a>
-                                <a
-                                    href="#projects"
-                                    onClick={closeMenu}
-                                    className="block px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition-all duration-300"
-                                >
-                                    Projects
-                                </a>
-                                <a
-                                    href="#contact"
-                                    onClick={closeMenu}
-                                    className="block px-3 py-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg transition-all duration-300"
-                                >
-                                    Contact
-                                </a>
-                            </div>
-                        </div>
+                    <div className="md:hidden bg-slate-900/1 shadow-lg z-50 border-b border-slate-700 px-4 py-6">
+                        <ul className="space-y-7">
+                        {["about", "skills", "projects", "contact"].map((item) => (
+                            <li key={item}>
+                            <a
+                                href={`#${item}`}
+                                className="block text-white text-lg relative group transition-all duration-300 hover:text-purple-300"
+                                onClick={closeMenu}
+                            >
+                                {item.charAt(0).toUpperCase() + item.slice(1)}
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                            </li>
+                        ))}
+                        </ul>
+                    </div>
                     )}
                 </div>
             </nav>
 
             {/* Hero Section */}
-            <section className="pt-20 pb-16 bg-gradient-to-br from-slate-900 via-slate-800 to-black relative overflow-hidden">
-                {/* Background decoration */}
-                <div className="absolute inset-0 opacity-20">
-                    <div style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a78bfa' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                        backgroundSize: '60px 60px'
-                    }} className="w-full h-full"></div>
-                </div>
-
+            <section className="pt-20 pb-16 relative overflow-hidden"> {/* Removed bg-gradient-to-br and background decoration */}
+                {/* Removed static background decoration */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
                     <div className="text-center">
                         <div className="mb-8">
-                            <div className="inline-flex items-center px-4 py-2 bg-slate-800 text-slate-200 rounded-full text-sm font-medium mb-8">
-                                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            <div className="inline-flex items-center px-4 py-2 bg-slate-800/90 text-slate-200 rounded-full text-sm font-medium mb-8 glow-effect backdrop-blur-sm">
+                                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                                 Available for opportunities
                             </div>
                         </div>
@@ -115,16 +142,16 @@ function App() {
                             </span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-slate-300 mb-4">
+                        <p className="text-xl md:text-2xl text-black-300 mb-4">
                             Beginner Full Stack Developer & Creative Problem Solver
                         </p>
 
-                        <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
+                        <p className="text-lg text-slate mb-8 max-w-2xl mx-auto">
                             I create beautiful, functional, and user-friendly web applications using modern technologies
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="#contact" className="group bg-gradient-to-r from-white to-purple-300 text-slate-900 px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-medium">
+                            <a href="#contact" className="group bg-gradient-to-r from-white to-purple-300 text-slate-900 px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1 font-medium ">
                                 <span className="flex items-center justify-center">
                                     Get In Touch
                                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,89 +171,72 @@ function App() {
                     </div>
                 </div>
 
-                {/* Floating elements */}
-                <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
-                <div className="absolute bottom-20 right-10 w-16 h-16 bg-purple-500 rounded-full opacity-10 blur-xl"></div>
-                <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-indigo-500 rounded-full opacity-10 blur-xl"></div>
+                {/* Removed Floating elements */}
             </section>
 
             {/* About Me Section */}
-            <section id="about" className="py-20 bg-slate-800/50 relative">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                            About <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Me</span>
-                        </h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full"></div>
-                    </div>
+           <section id="about" className="py-20 relative">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        About <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Me</span>
+      </h2>
+      <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full"></div>
+    </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="space-y-6">
-                            <div className="prose prose-lg text-slate-300">
-                                <p className="leading-relaxed">
-                                    I'm a passionate full-stack developer with a love for creating innovative
-                                    web solutions. With expertise in modern technologies and a keen eye for
-                                    design, I bring ideas to life through clean, efficient code.
-                                </p>
-                                <p className="leading-relaxed">
-                                    When I'm not coding, you can find me exploring new technologies,
-                                    contributing to open-source projects, or enjoying a good cup of tea
-                                    while brainstorming the next big idea.
-                                </p>
-                            </div>
+    <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+      <div className="space-y-6">
+        <div className="prose prose-lg text-slate-300 text-center max-w-3xl">
+          <p className="leading-relaxed text-center">
+            I'm a passionate full-stack developer with a love for creating innovative
+            web solutions. With expertise in modern technologies and a keen eye for
+            design, I bring ideas to life through clean and efficient code.
+          </p>
+          <p className="leading-relaxed text-center">
+            When I'm not coding, you can find me exploring new technologies,
+            contributing to open-source projects, or enjoying a good cup of tea
+            while brainstorming the next big idea.
+          </p>
+        </div>
 
-                            <div className="grid grid-cols-3 gap-6 pt-8">
-                                <div className="text-center group">
-                                    <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
-                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">3</h3>
-                                        <p className="text-slate-400 mt-2 font-medium">Months Experience</p>
-                                    </div>
-                                </div>
-                                <div className="text-center group">
-                                    <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
-                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">2+</h3>
-                                        <p className="text-slate-400 mt-2 font-medium">Projects Completed</p>
-                                    </div>
-                                </div>
-                                <div className="text-center group">
-                                    {/* Additional stat if needed */}
-                                </div>
-                            </div>
-                        </div>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-2 gap-6 pt-8 max-w-md">
+            <div className="text-center group">
+              <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">3</h3>
+                <p className="text-slate-400 mt-2 font-medium">Months Experience</p>
+              </div>
+            </div>
+            <div className="text-center group">
+              <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-blue-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">2+</h3>
+                <p className="text-slate-400 mt-2 font-medium">Projects Completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                        <div className="flex justify-center lg:justify-end">
-                            <div className="relative group">
-                                <div className="absolute -inset-4 bg-gradient-to-r from-white to-purple-300 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-                                {/* <div className="relative w-80 h-80 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300">
-                                    <img
-                                        src={profileImage}
-                                        alt="Vuth Piseth"
-                                        className="object-cover w-full h-full"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* Skills Section */}
-            <section id="skills" className="py-20 bg-gradient-to-br from-slate-900 to-black relative">
+            <section id="skills" className="py-20 relative"> {/* Removed bg-gradient-to-br */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                             My <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Skills</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
-                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                        <p className="text-lg text-slate max-w-2xl mx-auto">
                             Here are some of the technologies I work with to bring ideas to life
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="group">
-                            <div className="bg-slate-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden">
+                            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden glow-effect">
                                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
                                 <div className="flex items-center mb-6">
                                     <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center mr-4">
@@ -246,13 +256,13 @@ function App() {
                         </div>
 
                         <div className="group">
-                            <div className="bg-slate-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden">
+                            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden glow-effect">
                                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500"></div>
                                 <div className="flex items-center mb-6">
                                     <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center mr-4">
                                         <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
-                                        </svg>
+                                        </svg>                        
                                     </div>
                                     <h3 className="text-xl font-semibold text-white">Backend</h3>
                                 </div>
@@ -266,7 +276,7 @@ function App() {
                         </div>
 
                         <div className="group">
-                            <div className="bg-slate-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden">
+                            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-slate-700 relative overflow-hidden glow-effect">
                                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
                                 <div className="flex items-center mb-6">
                                     <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center mr-4">
@@ -289,14 +299,14 @@ function App() {
             </section>
 
             {/* Projects Section */}
-            <section id="projects" className="py-20 bg-slate-800/50 relative">
+            <section id="projects" className="py-20 relative"> {/* Removed bg-slate-800/50 */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                             My <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Projects</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
-                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                        <p className="text-lg text-slate max-w-2xl mx-auto">
                             Here are some of the projects I've built with passion and creativity
                         </p>
                     </div>
@@ -324,10 +334,10 @@ function App() {
                                     A full-stack e-commerce solution built with Python and Django, featuring user authentication, payment integration, and admin dashboard.
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">Django</span>
-                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">Tailwind CSS</span>
-                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">PostgreSQL</span>
-                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">JavaScript</span>
+                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">Django</span>
+                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">Tailwind CSS</span>
+                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">PostgreSQL</span>
+                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">JavaScript</span>
                                 </div>
                                 <div className="flex gap-3">
                                     <a href="https://bbu-d104-g3.thavrak-lab.xyz/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-gradient-to-r from-white to-purple-300 text-slate-900 px-4 py-2 rounded-xl hover:shadow-lg transition-all duration-300 text-sm font-medium text-center group/btn">
@@ -338,7 +348,7 @@ function App() {
                                             </svg>
                                         </span>
                                     </a>
-                                    <a href="https://github.com/piseth04/Django_selling" target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-slate-600 text-slate-300 px-4 py-2 rounded-xl hover:border-purple-300 hover:text-purple-300 transition-all duration-300 text-sm font-medium text-center group/btn">
+                                    <a href="https://github.com/piseth04/Django_selling" target="_blank" rel="noopener noreferrer" className="flex-1 border-2 border-slate-600 text-black-300 px-4 py-2 rounded-xl hover:border-purple-300 hover:text-purple-300 transition-all duration-300 text-sm font-medium text-center group/btn">
                                         <span className="flex items-center justify-center">
                                             GitHub
                                             <svg className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -368,10 +378,10 @@ function App() {
                                     A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">React.js</span>
-                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">FastAPI</span>
-                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">Tailwind CSS</span>
-                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-slate-300 px-3 py-1 rounded-xl text-xs font-medium">SQL lite</span>
+                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">React.js</span>
+                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">FastAPI</span>
+                                    <span className="bg-gradient-to-r from-slate-700 to-slate-600 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">Tailwind CSS</span>
+                                    <span className="bg-gradient-to-r from-slate-600 to-slate-700 text-black-300 px-3 py-1 rounded-xl text-xs font-medium">SQL lite</span>
                                 </div>
                                 <div className="flex gap-3">
                                     <button disabled className="flex-1 bg-slate-700 text-slate-500 px-4 py-2 rounded-xl text-sm font-medium text-center cursor-not-allowed opacity-60">
@@ -439,14 +449,14 @@ function App() {
             </section>
 
 {/* Contact Section */}
-<section id="contact" className="py-20 bg-slate-900 relative">
+<section id="contact" className="py-20 relative"> {/* Removed bg-slate-900 */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Get In <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">Touch</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-white to-purple-300 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-slate max-w-2xl mx-auto">
                 Let's create something amazing together. I'm always excited to discuss new opportunities and projects.
             </p>
         </div>
@@ -543,7 +553,7 @@ function App() {
                 <form className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label htmlFor="name" className="block text-sm font-semibold text-slate-300 mb-2">Name *</label>
+                            <label htmlFor="name" className="block text-sm font-semibold text-black-300 mb-2">Name *</label>
                             <input
                                 type="text"
                                 id="name"
@@ -554,7 +564,7 @@ function App() {
                             />
                         </div>
                         <div>
-                            <label htmlFor="email" className="block text-sm font-semibold text-slate-300 mb-2">Email *</label>
+                            <label htmlFor="email" className="block text-sm font-semibold text-black-300 mb-2">Email *</label>
                             <input
                                 type="email"
                                 id="email"
@@ -567,7 +577,7 @@ function App() {
                     </div>
 
                     <div>
-                        <label htmlFor="subject" className="block text-sm font-semibold text-slate-300 mb-2">Subject *</label>
+                        <label htmlFor="subject" className="block text-sm font-semibold text-black-300 mb-2">Subject *</label>
                         <input
                             type="text"
                             id="subject"
@@ -579,7 +589,7 @@ function App() {
                     </div>
 
                     <div>
-                        <label htmlFor="message" className="block text-sm font-semibold text-slate-300 mb-2">Message *</label>
+                        <label htmlFor="message" className="block text-sm font-semibold text-black-300 mb-2">Message *</label>
                         <textarea
                             id="message"
                             name="message"
@@ -608,47 +618,43 @@ function App() {
 </section>
 
 {/* Footer */}
-<footer className="bg-gradient-to-r from-slate-900 via-black to-slate-900 text-white py-12 relative overflow-hidden">
-    <div className="absolute inset-0 bg-black/20"></div>
+<footer className="text-white py-12 relative overflow-hidden"> {/* Removed bg-gradient-to-r and background decoration */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center">
             <div className="mb-6">
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-2">
                     Vuth Piseth
                 </h3>
-                <p className="text-slate-400">Beginner Full Stack Developer & Creative Problem Solver</p>
+                <p className="text-slate">Beginner Full Stack Developer & Creative Problem Solver</p>
             </div>
 
             <div className="flex justify-center space-x-6 mb-8">
-                <a href="https://t.me/SETHPI" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors">
+                <a href="https://t.me/SETHPI" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-blue-400 transition-colors">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                     </svg>
                 </a>
-                <a href="https://github.com/piseth04" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                <a href="https://github.com/piseth04" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-black transition-colors">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
                 </a>
-                <a href="mailto:piseth3025@gmail.com" className="text-slate-400 hover:text-purple-400 transition-colors">
+                <a href="mailto:piseth3025@gmail.com" className="text-slate hover:text-green-400 transition-colors">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                 </a>
             </div>
 
-            <div className="border-t border-slate-700 pt-6">
-                <p className="text-slate-500 text-sm">
+            <div className="border-t border-slate pt-6">
+                <p className="text-slate text-sm">
                     &copy; 2025 Vuth Piseth. All rights reserved. Built with ❤️ using React & Tailwind CSS
                 </p>
             </div>
         </div>
     </div>
-
-    {/* Background decoration */}
-    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full -translate-y-16 translate-x-16 blur-2xl"></div>
-    <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-500/10 rounded-full translate-y-12 -translate-x-12 blur-2xl"></div>
 </footer>
+      </div>
     </div>
   )
 }
