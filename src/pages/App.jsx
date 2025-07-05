@@ -104,7 +104,7 @@ function App() {
                     <div className="text-center">
                         <div className="mb-8">
                             <div className="inline-flex items-center px-4 py-2 bg-slate-800 text-slate-200 rounded-full text-sm font-medium mb-8">
-                                <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                                 Available for opportunities
                             </div>
                         </div>
@@ -178,7 +178,7 @@ function App() {
                             <div className="grid grid-cols-3 gap-6 pt-8">
                                 <div className="text-center group">
                                     <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 mb-4 group-hover:shadow-lg group-hover:shadow-purple-500/10 transition-all duration-300 transform group-hover:-translate-y-2">
-                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">4</h3>
+                                        <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">3</h3>
                                         <p className="text-slate-400 mt-2 font-medium">Months Experience</p>
                                     </div>
                                 </div>
@@ -197,14 +197,14 @@ function App() {
                         <div className="flex justify-center lg:justify-end">
                             <div className="relative group">
                                 <div className="absolute -inset-4 bg-gradient-to-r from-white to-purple-300 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-                                <div className="relative w-80 h-80 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300">
+                                {/* <div className="relative w-80 h-80 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300">
                                     <img
                                         src={profileImage}
                                         alt="Vuth Piseth"
                                         className="object-cover w-full h-full"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -616,7 +616,7 @@ function App() {
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent mb-2">
                     Vuth Piseth
                 </h3>
-                <p className="text-slate-400">Full Stack Developer & Creative Problem Solver</p>
+                <p className="text-slate-400">Beginner Full Stack Developer & Creative Problem Solver</p>
             </div>
 
             <div className="flex justify-center space-x-6 mb-8">
